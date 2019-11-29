@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Order Form - Web site for Small business OZSolar Pty Ltd</title>
+				<link rel="stylesheet" href="main.css">
+				<link rel="stylesheet prefetch" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css">
+					<script src="pricing.js"></script>
+	</head>
+	<body>
+		<header>
+				<h1>Order Form</h1>
+					<fieldset style="width: 20%">
+						<legend style="font-weight: bold">OZSolar Pty Ltd</legend>
+							<address>Address: 
+									Pearcedale Parade, Broadmeadows VIC 3047
+							</address>
+								<div>Phone number: 0427 075 009</div>
+								<div>Fax number: 0427 075 009</div>
+					</fieldset>
+		</header>	
+			<br>
+		<main>
+								<nav>
+									<ul>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-home icon-2x"></i></div>
+													<a href="index.html"><span>Home</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-briefcase icon-2x"></i></div>
+													<a href="about.html"><span>About us</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-lightbulb icon-2x"></i></div>
+													<a href="history.html"><span>History</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-list icon-2x"></i></div>
+													<a href="product.html"><span>Product List</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-align-left icon-2x"></i></div>
+													<a href="order.html"><span>Order Form</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-leaf icon-2x"></i></div>
+													<a href="https://www.workwell.vic.gov.au/"><span>Origin Energy</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-fire icon-2x"></i></div>
+													<a href="https://www.energyaustralia.com.au/"><span>Energy Australia</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-wrench icon-2x"></i></div>
+													<a href="https://www.workwell.vic.gov.au/"><span>Worksafe Victoria</span></a>
+											</div>
+										</li>
+										<li class="var_nav">
+											<div class="link_bg"></div>
+											<div class="link_title">
+												<div class="icon"><i class="icon-mobile-phone icon-2x"></i></div>
+													<a href="contact.html"><span>Contact us</span></a>
+											</div>
+										</li>
+									</ul>
+								</nav>								
+		</main>
+		<aside>
+			<section>
+				<h2>Order now:</h2>
+			</section>
+					<form method="POST" name="frmS">					
+						<table>
+								<tr>
+									 <Th class="td_width">Product</th>
+									 <th class="td">Price in $</th>
+									 <th class="td">Quantity</th>	
+								</tr>	
+								<tr>
+									 <Td class="td_width">Product 1</td>
+									 <td class="td"><input type="number" name="Prod1Rt" value="666"></td>
+									 <td class="td"><input type="number" name="Prod1qty" value="0"></td>	
+								</tr>	
+								<tr>
+									 <Td class="td_width">Product 2</td>
+									 <td class="td"><input type="number" name="Prod2Rt" value="777"></td>
+									 <td class="td"><input type="number" name="Prod2qty" value="0"></td>
+								</tr>			
+								<tr>
+									<td colspan="2"><div><input type="button" onClick="cal1()" value="Calculate"></div>	
+									</td>
+									<td colspan="1"><input type="submit" value="reset">
+									</td>
+								</tr>	
+								<tr>  	
+									<td>Sub Total</td>
+									<td class="td" colspan="2"><input type="text" name="tsubTtl"></td>
+								</tr>	
+								<tr>
+									<td>GST</td>
+									 <td class="td" colspan="2"><input type="text" name="tGST"></td>
+								</tr>	
+								<tr>
+									   <td>Total Due</td>
+									   <td class="td" colspan="2"><input type="text" name="Ttl"></td>
+								 </tr>	
+								<tr>  	
+									<td>Name</td>
+									<td class="td" colspan="2"><input type="text" name="name" placeholder="Name"></td>
+								</tr>	
+								<tr>
+									<td>Billing address</td>
+									 <td class="td" colspan="2"><input type="text" name="billingaddress" placeholder="Billing address"></td>
+								</tr>	
+								<tr>
+									   <td>Installation address</td>
+									   <td class="td" colspan="2"><input type="text" name="installationaddress" placeholder="Installation address"></td>
+								 </tr>	
+								<tr>
+									   <td>Payment Options</td>
+									 <td class="td" colspan="2"><input type="text" name="billingaddress" placeholder="Payment Options"></td>
+								</tr>	
+								<tr>
+									   <td>Special comments</td>
+									   <td class="td" colspan="2"><input type="text" name="specialcomments" placeholder="Special comments"></td>
+								 </tr>		
+								<tr>
+									<td colspan="3">
+										<div>
+											<button type="submit">Send</button>
+										</div>	
+									</td>
+								</tr>									
+						</table>
+					</form>
+		</aside>
+	</body>
+</html>
