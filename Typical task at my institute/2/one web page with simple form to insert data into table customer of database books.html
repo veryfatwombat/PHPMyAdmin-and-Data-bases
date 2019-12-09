@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>one web page with simple form to insert data into table customer of database books.html</title>
+                <style>
+                    input[type=button], input[type=submit], input[type=reset] {
+                      background-color: #4CAF50;
+                      border: none;
+                      color: white;
+                      padding: 16px 32px;
+                      text-decoration: none;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                    }
+
+                    input[type=text] {
+                      border: 2px solid green;
+                      border-radius: 4px;
+                    }
+
+                    input[type=text] {
+                      width: 100%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      box-sizing: border-box;
+                    }
+
+                    .placeholder:focus::placeholder {
+                      opacity: 0;
+                    }
+                </style>
+                    <link rel="shortcut icon" href="foot-icon.jpg">
+    </head>
+    <body>
+        <form action="insert.php" method="post">
+
+            <p>
+                <label for="Customer_id">Customer_id:</label>
+                <input type="text" name="Customer_id" id="Customer_id" placeholder="You can write 10 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="FirstName">FirstName:</label>
+                <input type="text" name="FirstName" id="FirstName" placeholder="You can write 30 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="LastName">LastName:</label>
+                <input type="text" name="LastName" id="LastName" placeholder="You can write 30 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="Address">Address:</label>
+                <input type="text" name="Address" id="Address" placeholder="You can write 30 characters" placeholder="You can write 30 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="email">email:</label>
+                <input type="text" name="email" id="email" placeholder="You can write 30 characters" placeholder="You can write 30 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="phone">phone:</label>
+                <input type="text" name="phone" id="phone" placeholder="You can write 30 characters" placeholder="You can write 10 characters" class="placeholder">
+            </p>
+
+            <input type="reset" name="Clear" value="Clear" tabindex="50">
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

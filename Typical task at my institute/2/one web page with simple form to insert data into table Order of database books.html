@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>one web page with simple form to insert data into table customer of database books.html</title>
+                <style>
+                    input[type=button], input[type=submit], input[type=reset] {
+                      background-color: #4CAF50;
+                      border: none;
+                      color: white;
+                      padding: 16px 32px;
+                      text-decoration: none;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                    }
+
+                    input[type=text] {
+                      border: 2px solid green;
+                      border-radius: 4px;
+                      width: 100%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      box-sizing: border-box;
+                    }
+
+                    input[type=date] {
+                      border: 2px solid green;
+                      border-radius: 4px;
+                      width: 100%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      box-sizing: border-box;
+                    }
+
+                    .placeholder:focus::placeholder {
+                      opacity: 0;
+                    }
+                </style>
+                    <link rel="shortcut icon" href="foot-icon.jpg">
+    </head>
+    <body>
+        <form action="insert2.php" method="post">
+
+            <p>
+                <label for="Customer_id">Customer_id:</label>
+                <input type="text" name="Customer_id" id="Customer_id" placeholder="You can write 10 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="bookid">bookid:</label>
+                <input type="text" name="bookid" id="bookid" placeholder="You can write 10 characters" class="placeholder">
+            </p>
+
+            <p>
+                <label for="Orderdate">Orderdate:</label>
+                <input type="date" name="Orderdate" id="Orderdate">
+            </p>
+
+            <p>
+                <label for="OrderDetails">Order details:</label>
+                <input type="text" name="OrderDetails" id="OrderDetails" placeholder="You can write 30 characters" placeholder="You can write 30 characters" class="placeholder">
+            </p>
+
+            <input type="reset" name="Clear" value="Clear" tabindex="50">
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
